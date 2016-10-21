@@ -9,7 +9,7 @@ import android.view.ViewGroup;
 
 
 import com.liuhao.orange.R;
-import com.liuhao.orange.view.IBaseView;
+import com.liuhao.orange.view.iface.IBaseView;
 
 import butterknife.ButterKnife;
 
