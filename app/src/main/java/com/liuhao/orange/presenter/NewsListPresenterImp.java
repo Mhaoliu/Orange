@@ -24,12 +24,17 @@ public class NewsListPresenterImp implements INewsListPresenter, IDownLoadListen
         this.mNewsView = mNewsView;
         this.mContext = mContext;
         this.mIndex = mIndex;
-        this.mNewsModel = new NewsListModelImp();
+        this.mNewsModel = new NewsListModelImp(this);
     }
 
     @Override
     public void loadNews() {
-        mNewsModel.downNews(this, mContext, mIndex);
+        mNewsModel.downNews(mContext, mIndex);
+    }
+
+    @Override
+    public void unSubscribe() {
+        mNewsModel.unSubscribe();
     }
 
 

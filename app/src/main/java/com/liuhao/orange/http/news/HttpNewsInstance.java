@@ -20,6 +20,7 @@ import okhttp3.Response;
 import retrofit2.Retrofit;
 import retrofit2.adapter.rxjava.RxJavaCallAdapterFactory;
 import retrofit2.converter.gson.GsonConverterFactory;
+import rx.Observable;
 import rx.Subscriber;
 import rx.android.schedulers.AndroidSchedulers;
 import rx.functions.Func1;
@@ -54,14 +55,14 @@ public class HttpNewsInstance {
                 Request request = chain.request();
                 boolean isNetConnection = NetworkConnection.isNetworkConnected(mContext);
                 if (!isNetConnection) {
-                    LogUtils.d("network","网络没有连接");
+                    LogUtils.d("network", "网络没有连接");
                     request = request.newBuilder()
                             .cacheControl(CacheControl.FORCE_CACHE)
                             .build();
                 }
                 Response response = chain.proceed(request);
                 if (isNetConnection) {
-                    LogUtils.d("network","网络连接");
+                    LogUtils.d("network", "网络连接");
                     String cacheControl = request.cacheControl().toString();
                     Log.i("androidxx", "cacheControl:" + cacheControl);
                     return response.newBuilder()
@@ -69,7 +70,7 @@ public class HttpNewsInstance {
                             .removeHeader("Pragma")
                             .build();
                 } else {
-                    LogUtils.d("network","网络没有连接");
+                    LogUtils.d("network", "网络没有连接");
                     return response.newBuilder()
                             .header("Cache-Control", "public, only-if-cached, max-stale=2419200")
                             .removeHeader("Pragma")
@@ -106,7 +107,6 @@ public class HttpNewsInstance {
     }
 
     public void getNewsBean(Subscriber<NewsBean> subscriber, String type, String key) {
-        Log.d("androidxx", "ddddd");
         mNewsService.getNewsBean(type, key).map(new Func1<NewsInfo<NewsBean>, NewsBean>() {
 
             @Override
@@ -121,5 +121,7 @@ public class HttpNewsInstance {
                 .unsubscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(subscriber);
+
+
     }
 }

@@ -7,4 +7,6 @@ package com.liuhao.orange.presenter.iface;
 public interface INewsListPresenter {
 
     void loadNews();
+
+    void unSubscribe();
 }

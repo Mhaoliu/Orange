@@ -90,4 +90,10 @@ public class NewsListFragment extends BaseFragment implements INewsListView {
     public void complete() {
         dismissProgressDialog();
     }
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        mNewsPresenter.unSubscribe();
+    }
 }
