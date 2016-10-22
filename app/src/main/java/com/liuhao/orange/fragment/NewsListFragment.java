@@ -3,6 +3,7 @@ package com.liuhao.orange.fragment;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.widget.TextView;
 
 import com.liuhao.orange.R;
@@ -10,6 +11,7 @@ import com.liuhao.orange.base.BaseFragment;
 import com.liuhao.orange.bean.NewsBean;
 import com.liuhao.orange.presenter.NewsListPresenterImp;
 import com.liuhao.orange.presenter.iface.INewsListPresenter;
+import com.liuhao.orange.utils.log.LogUtils;
 import com.liuhao.orange.view.INewsListView;
 
 import butterknife.BindView;
@@ -59,7 +61,7 @@ public class NewsListFragment extends BaseFragment implements INewsListView {
 
     @Override
     protected void initData() {
-        mNewsPresenter = new NewsListPresenterImp(this);
+        mNewsPresenter = new NewsListPresenterImp(this, getActivity(), mIndex);
         mNewsPresenter.loadNews();
     }
 
@@ -70,7 +72,8 @@ public class NewsListFragment extends BaseFragment implements INewsListView {
 
     @Override
     public void showNewsList(NewsBean newsBean) {
-
+        LogUtils.i("newsBean", newsBean.toString());
+        textView.setText(newsBean.toString());
     }
 
     @Override

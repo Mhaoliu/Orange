@@ -1,6 +1,8 @@
 package com.liuhao.orange.presenter;
 
 
+import android.content.Context;
+
 import com.liuhao.orange.base.IDownLoadListener;
 import com.liuhao.orange.bean.NewsBean;
 import com.liuhao.orange.model.NewsListModelImp;
@@ -15,15 +17,19 @@ import com.liuhao.orange.view.INewsListView;
 public class NewsListPresenterImp implements INewsListPresenter, IDownLoadListener<NewsBean> {
     private INewsListView mNewsView;
     private INewsListModel mNewsModel;
+    private Context mContext;
+    private int mIndex;
 
-    public NewsListPresenterImp(INewsListView mNewsView) {
+    public NewsListPresenterImp(INewsListView mNewsView, Context mContext, int mIndex) {
         this.mNewsView = mNewsView;
+        this.mContext = mContext;
+        this.mIndex = mIndex;
         this.mNewsModel = new NewsListModelImp();
     }
 
     @Override
     public void loadNews() {
-        mNewsModel.downNews(this);
+        mNewsModel.downNews(this, mContext, mIndex);
     }
 
 
