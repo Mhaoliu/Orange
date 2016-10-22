@@ -1,4 +1,4 @@
-package com.liuhao.orange.adapter;
+package com.liuhao.orange.adapter.base;
 
 import android.content.Context;
 import android.graphics.Bitmap;

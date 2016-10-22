@@ -64,7 +64,6 @@ public class HttpNewsInstance {
                 if (isNetConnection) {
                     LogUtils.d("network", "网络连接");
                     String cacheControl = request.cacheControl().toString();
-                    Log.i("androidxx", "cacheControl:" + cacheControl);
                     return response.newBuilder()
                             .header("Cache-Control", cacheControl)
                             .removeHeader("Pragma")
@@ -111,7 +110,6 @@ public class HttpNewsInstance {
 
             @Override
             public NewsBean call(NewsInfo<NewsBean> info) {
-                Log.d("androidxx", info.toString());
                 if (info.getError_code() != 0) {
                     return null;
                 }

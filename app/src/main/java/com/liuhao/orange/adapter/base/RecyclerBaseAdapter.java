@@ -1,7 +1,8 @@
-package com.liuhao.orange.adapter;
+package com.liuhao.orange.adapter.base;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -124,13 +125,13 @@ public abstract class RecyclerBaseAdapter<T> extends RecyclerView.Adapter<Recycl
      *
      * @author zlp
      */
-    interface MultiItemTypeSupportListener {
+    public interface MultiItemTypeSupportListener {
         int getItemViewType(int position);
 
         int getLayoutId(int viewType);
     }
 
-    interface OnItemClickListener {
+    public interface OnItemClickListener {
         void onItemClick(View view, int position);
     }
 }

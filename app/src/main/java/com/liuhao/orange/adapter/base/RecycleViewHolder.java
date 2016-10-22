@@ -1,4 +1,4 @@
-package com.liuhao.orange.adapter;
+package com.liuhao.orange.adapter.base;
 
 import android.graphics.Bitmap;
 import android.support.v7.widget.RecyclerView;

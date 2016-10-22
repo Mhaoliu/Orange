@@ -1,18 +1,29 @@
 package com.liuhao.orange.fragment;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.util.Log;
+import android.view.View;
 import android.widget.TextView;
 
 import com.liuhao.orange.R;
+import com.liuhao.orange.activity.WebActivity;
+import com.liuhao.orange.adapter.NewsListAdapter;
+import com.liuhao.orange.adapter.base.RecyclerBaseAdapter;
 import com.liuhao.orange.base.BaseFragment;
 import com.liuhao.orange.bean.NewsBean;
 import com.liuhao.orange.presenter.NewsListPresenterImp;
 import com.liuhao.orange.presenter.iface.INewsListPresenter;
 import com.liuhao.orange.utils.log.LogUtils;
 import com.liuhao.orange.view.INewsListView;
+import com.liuhao.orange.width.RecycleViewDivider;
+
+import java.util.ArrayList;
+import java.util.List;
 
 import butterknife.BindView;
 
@@ -25,8 +36,10 @@ public class NewsListFragment extends BaseFragment implements INewsListView {
     private static final String ARG_PARAM = "index";
     //当前fragment 的位置
     private int mIndex;
-    @BindView(R.id.text)
-    TextView textView;
+    @BindView(R.id.recycler_new_list)
+    RecyclerView mRecyclerView;
+    private List<NewsBean.DataBean> mNewsList = new ArrayList<>();
+    private NewsListAdapter mListAdapter;
     private INewsListPresenter mNewsPresenter;
 
     public NewsListFragment() {
@@ -56,7 +69,11 @@ public class NewsListFragment extends BaseFragment implements INewsListView {
 
     @Override
     protected void initView() {
-        textView.setText(mIndex + "aaa");
+        RecyclerView.LayoutManager manager = new LinearLayoutManager(getActivity(), LinearLayoutManager.VERTICAL, false);
+        mRecyclerView.setLayoutManager(manager);
+        mListAdapter = new NewsListAdapter(getActivity(), mNewsList, R.layout.new_list_item_one);
+        mRecyclerView.setAdapter(mListAdapter);
+        mRecyclerView.addItemDecoration(new RecycleViewDivider(getActivity(), LinearLayoutManager.HORIZONTAL));
     }
 
     @Override
@@ -67,13 +84,25 @@ public class NewsListFragment extends BaseFragment implements INewsListView {
 
     @Override
     protected void initEvent() {
-
+        mListAdapter.setOnItemClickListener(new RecyclerBaseAdapter.OnItemClickListener() {
+            @Override
+            public void onItemClick(View view, int position) {
+                if (mNewsList != null && mNewsList.get(position) != null) {
+                    Intent intent = new Intent(getActivity(), WebActivity.class);
+                    intent.putExtra("webpath", mNewsList.get(position).getUrl());
+                    getActivity().startActivity(intent);
+                }
+            }
+        });
     }
 
     @Override
     public void showNewsList(NewsBean newsBean) {
-        LogUtils.i("newsBean", newsBean.toString());
-        textView.setText(newsBean.toString());
+        if (newsBean != null) {
+            LogUtils.i("newsBean", newsBean.toString());
+            mNewsList.addAll(newsBean.getData());
+            mListAdapter.addAll(mNewsList);
+        }
     }
 
     @Override
