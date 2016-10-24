@@ -12,6 +12,7 @@ import com.liuhao.orange.R;
 import com.liuhao.orange.adapter.NewsFragmentAdapter;
 import com.liuhao.orange.base.BaseFragment;
 import com.liuhao.orange.constant.Constant;
+import com.liuhao.orange.width.NestedViewPager;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -27,7 +28,7 @@ public class NewsFragment extends BaseFragment {
     @BindView(R.id.news_tablayout)
     TabLayout mTabLayout;
     @BindView(R.id.news_viewpager)
-    ViewPager mViewPager;
+    NestedViewPager mViewPager;
     private NewsFragmentAdapter mFragmentAdapter;
     private List<BaseFragment> mFragmentList = new ArrayList<>();
 

@@ -100,8 +100,9 @@ public class NewsListFragment extends BaseFragment implements INewsListView {
     public void showNewsList(NewsBean newsBean) {
         if (newsBean != null) {
             LogUtils.i("newsBean", newsBean.toString());
+            mNewsList.clear();
             mNewsList.addAll(newsBean.getData());
-            mListAdapter.addAll(mNewsList);
+            mListAdapter.notifyDataSetChanged();
         }
     }
 

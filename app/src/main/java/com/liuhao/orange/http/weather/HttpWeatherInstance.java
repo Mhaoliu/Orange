@@ -30,7 +30,7 @@ public class HttpWeatherInstance {
                 .client(builder.build())
                 .addConverterFactory(GsonConverterFactory.create())
                 .addCallAdapterFactory(RxJavaCallAdapterFactory.create())
-                .baseUrl("")
+                .baseUrl(BasePath)
                 .build();
         mService = mRetrofit.create(WeatherService.class);
     }

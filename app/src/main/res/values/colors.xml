@@ -3,8 +3,8 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
-    <color name="normer">#ff3f00</color>
+    <color name="normer">#fcb33a</color>
     <color name="tab_background">#e0e0e0</color>
-    <color name="radio_button_text">#ff3f00</color>
+    <color name="radio_button_text">#fcb33a</color>
     <color name="radio_button_text_normer">#cccccc</color>
 </resources>

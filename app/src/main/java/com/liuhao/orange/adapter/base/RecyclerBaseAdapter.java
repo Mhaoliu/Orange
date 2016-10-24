@@ -14,11 +14,11 @@ import java.util.List;
  */
 public abstract class RecyclerBaseAdapter<T> extends RecyclerView.Adapter<RecycleViewHolder> {
 
-    private Context mContext;
+    protected Context mContext;
     //集合数据源
-    private List<T> mDatas;
+    protected List<T> mDatas;
     // 数组数据源T[]
-    private T[] mDataArray;
+    protected T[] mDataArray;
     private int mLayoutId;
 
     private MultiItemTypeSupportListener multiItemTypeSupportListener;
@@ -97,27 +97,6 @@ public abstract class RecyclerBaseAdapter<T> extends RecyclerView.Adapter<Recycl
     public long getItemId(int position) {
 
         return position;
-    }
-
-    /**
-     * 修改数据源
-     *
-     * @param data
-     */
-    public void updateData(List<T> data) {
-        mDatas.clear();
-        mDatas.addAll(data);
-        notifyDataSetChanged();
-    }
-
-    /**
-     * 添加数据源
-     *
-     * @param data
-     */
-    public void addAll(List<T> data) {
-        mDatas.addAll(data);
-        notifyDataSetChanged();
     }
 
     /**

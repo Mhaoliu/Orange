@@ -5,7 +5,7 @@
     <string name="mian_rb_utils">工具</string>
     <string name="mian_rb_weather">天气</string>
     <string name="mian_rb_me">我的</string>
-
+    <string name="weather_search">搜索天气</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

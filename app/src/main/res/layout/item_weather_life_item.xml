@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_margin="5dp"
+              android:orientation="vertical"
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="2016-10-23"
+            />
+
+        <TextView
+            android:id="@+id/nongli"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="九月廿三"
+            />
+
+        <TextView
+            android:id="@+id/week"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="日"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="白天"/>
+
+            <TextView
+                android:id="@+id/day_weather"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="晴"/>
+
+            <TextView
+                android:id="@+id/day_t"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20"/>
+
+            <TextView
+                android:id="@+id/day_wind"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="东风"/>
+
+            <TextView
+                android:id="@+id/day_wind_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="微风"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="夜晚"/>
+
+            <TextView
+                android:id="@+id/night_weather"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="小雨"/>
+
+            <TextView
+                android:id="@+id/night_t"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5"/>
+
+            <TextView
+                android:id="@+id/night_wind"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="东风"/>
+
+            <TextView
+                android:id="@+id/night_wind_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="微风"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

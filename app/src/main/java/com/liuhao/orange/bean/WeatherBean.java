@@ -6,6 +6,12 @@ import java.util.List;
  * Created by liuhao on 2016/10/22.
  */
 public class WeatherBean {
+    @Override
+    public String toString() {
+        return "WeatherBean{" +
+                "data=" + data +
+                '}';
+    }
 
     private DataBean data;
 
@@ -18,7 +24,20 @@ public class WeatherBean {
     }
 
     public static class DataBean {
-
+        @Override
+        public String toString() {
+            return "DataBean{" +
+                    "realtime=" + realtime +
+                    ", life=" + life +
+                    ", f3h=" + f3h +
+                    ", pm25=" + pm25 +
+                    ", jingqu='" + jingqu + '\'' +
+                    ", jingqutq='" + jingqutq + '\'' +
+                    ", date='" + date + '\'' +
+                    ", isForeign='" + isForeign + '\'' +
+                    ", weather=" + weather +
+                    '}';
+        }
 
         private RealtimeBean realtime;
 
@@ -123,6 +142,21 @@ public class WeatherBean {
 
             private WindBean wind;
 
+            @Override
+            public String toString() {
+                return "RealtimeBean{" +
+                        "city_code='" + city_code + '\'' +
+                        ", city_name='" + city_name + '\'' +
+                        ", date='" + date + '\'' +
+                        ", time='" + time + '\'' +
+                        ", week=" + week +
+                        ", moon='" + moon + '\'' +
+                        ", dataUptime=" + dataUptime +
+                        ", weather=" + weather +
+                        ", wind=" + wind +
+                        '}';
+            }
+
             public String getCity_code() {
                 return city_code;
             }
@@ -201,6 +235,16 @@ public class WeatherBean {
                 private String info;
                 private String img;
 
+                @Override
+                public String toString() {
+                    return "WeatherInfo{" +
+                            "temperature='" + temperature + '\'' +
+                            ", humidity='" + humidity + '\'' +
+                            ", info='" + info + '\'' +
+                            ", img='" + img + '\'' +
+                            '}';
+                }
+
                 public String getTemperature() {
                     return temperature;
                 }
@@ -240,6 +284,16 @@ public class WeatherBean {
                 private Object offset;
                 private Object windspeed;
 
+                @Override
+                public String toString() {
+                    return "WindBean{" +
+                            "direct='" + direct + '\'' +
+                            ", power='" + power + '\'' +
+                            ", offset=" + offset +
+                            ", windspeed=" + windspeed +
+                            '}';
+                }
+
                 public String getDirect() {
                     return direct;
                 }
@@ -278,6 +332,14 @@ public class WeatherBean {
             private String date;
             private InfoBean info;
 
+            @Override
+            public String toString() {
+                return "LifeBean{" +
+                        "date='" + date + '\'' +
+                        ", info=" + info +
+                        '}';
+            }
+
             public String getDate() {
                 return date;
             }
@@ -301,6 +363,18 @@ public class WeatherBean {
                 private List<String> xiche;
                 private List<String> yundong;
                 private List<String> ziwaixian;
+
+                @Override
+                public String toString() {
+                    return "InfoBean{" +
+                            "chuanyi=" + chuanyi +
+                            ", ganmao=" + ganmao +
+                            ", kongtiao=" + kongtiao +
+                            ", xiche=" + xiche +
+                            ", yundong=" + yundong +
+                            ", ziwaixian=" + ziwaixian +
+                            '}';
+                }
 
                 public List<String> getChuanyi() {
                     return chuanyi;
@@ -354,6 +428,13 @@ public class WeatherBean {
 
         public static class FhBean {
 
+            @Override
+            public String toString() {
+                return "FhBean{" +
+                        "temperature=" + temperature +
+                        ", precipitation=" + precipitation +
+                        '}';
+            }
 
             private List<TemperatureBean> temperature;
 
@@ -380,6 +461,14 @@ public class WeatherBean {
                 private String jg;
                 private String jb;
 
+                @Override
+                public String toString() {
+                    return "TemperatureBean{" +
+                            "jg='" + jg + '\'' +
+                            ", jb='" + jb + '\'' +
+                            '}';
+                }
+
                 public String getJg() {
                     return jg;
                 }
@@ -400,6 +489,14 @@ public class WeatherBean {
             public static class PrecipitationBean {
                 private String jg;
                 private String jf;
+
+                @Override
+                public String toString() {
+                    return "PrecipitationBean{" +
+                            "jg='" + jg + '\'' +
+                            ", jf='" + jf + '\'' +
+                            '}';
+                }
 
                 public String getJg() {
                     return jg;
@@ -427,6 +524,17 @@ public class WeatherBean {
             private Pm25Bean pm25;
             private String dateTime;
             private String cityName;
+
+            @Override
+            public String toString() {
+                return "PmBean{" +
+                        "key='" + key + '\'' +
+                        ", show_desc=" + show_desc +
+                        ", pm25=" + pm25 +
+                        ", dateTime='" + dateTime + '\'' +
+                        ", cityName='" + cityName + '\'' +
+                        '}';
+            }
 
             public String getKey() {
                 return key;
@@ -475,6 +583,18 @@ public class WeatherBean {
                 private int level;
                 private String quality;
                 private String des;
+
+                @Override
+                public String toString() {
+                    return "Pm25Bean{" +
+                            "curPm='" + curPm + '\'' +
+                            ", pm25='" + pm25 + '\'' +
+                            ", pm10='" + pm10 + '\'' +
+                            ", level=" + level +
+                            ", quality='" + quality + '\'' +
+                            ", des='" + des + '\'' +
+                            '}';
+                }
 
                 public String getCurPm() {
                     return curPm;
@@ -532,6 +652,16 @@ public class WeatherBean {
             private String week;
             private String nongli;
 
+            @Override
+            public String toString() {
+                return "WeatherInfo{" +
+                        "date='" + date + '\'' +
+                        ", info=" + info +
+                        ", week='" + week + '\'' +
+                        ", nongli='" + nongli + '\'' +
+                        '}';
+            }
+
             public String getDate() {
                 return date;
             }
@@ -567,6 +697,14 @@ public class WeatherBean {
             public static class InfoBean {
                 private List<String> day;
                 private List<String> night;
+
+                @Override
+                public String toString() {
+                    return "InfoBean{" +
+                            "day=" + day +
+                            ", night=" + night +
+                            '}';
+                }
 
                 public List<String> getDay() {
                     return day;
