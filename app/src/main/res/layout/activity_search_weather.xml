@@ -1,9 +1,83 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp"
     tools:context="com.liuhao.orange.activity.SearchWeatherActivity">
 
-</RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+
+        <EditText
+            android:id="@+id/et_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/bt_search"
+            android:background="@drawable/weather_search"
+            android:hint="搜索更多城市天气"
+            android:padding="3dp"
+            android:textCursorDrawable="@drawable/shap_cursor_edtext"
+            android:textColor="#cccccc"
+            />
+
+        <Button
+            android:id="@id/bt_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:text="搜索"
+            android:background="#00000000"
+            />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/weather_hot_city"
+        android:layout_marginTop="10dp"
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycle_hotcity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/weather_search_record"
+        android:layout_marginTop="20dp"
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycle_search_record"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="删除历史记录"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:id="@+id/tv_nodata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="没有历史记录"
+        />
+
+</LinearLayout>

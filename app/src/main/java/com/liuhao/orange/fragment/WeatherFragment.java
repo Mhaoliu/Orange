@@ -1,14 +1,18 @@
 package com.liuhao.orange.fragment;
 
 
+import android.content.Context;
 import android.content.Intent;
 import android.support.v4.app.Fragment;
+import android.support.v7.view.ContextThemeWrapper;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -76,9 +80,12 @@ public class WeatherFragment extends BaseFragment implements IWeatherView {
     public WeatherFragment() {
     }
 
+
     @Override
-    protected int getLayoutResources() {
-        return R.layout.fragment_weather;
+    protected View getCreateView(LayoutInflater inflater, ViewGroup container) {
+        Context contextThemeWrapper = new ContextThemeWrapper(getActivity(), R.style.WeatherTheme);
+        LayoutInflater localInflater = inflater.cloneInContext(contextThemeWrapper);
+        return localInflater.inflate(R.layout.fragment_weather, container, false);
     }
 
     @Override
@@ -178,7 +185,6 @@ public class WeatherFragment extends BaseFragment implements IWeatherView {
         super.onActivityResult(requestCode, resultCode, data);
         if (data != null) {
             if (requestCode == Constant.REQUESTCODE && resultCode == Constant.RESULTCODE) {
-                Log.d("androidxx", data.getStringExtra("cityname"));
                 mPresenter.onSearch(data.getStringExtra("cityname"));
             }
         }

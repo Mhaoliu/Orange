@@ -42,17 +42,19 @@ public abstract class BaseFragment extends Fragment implements IBaseView {
         return mLayoutView;
     }
 
+    protected abstract View getCreateView(LayoutInflater inflater, ViewGroup container);
 
-    private View getCreateView(LayoutInflater inflater, ViewGroup container) {
-        return inflater.inflate(getLayoutResources(), container, false);
-    }
 
-    /**
-     * 获取布局文件
-     *
-     * @return
-     */
-    protected abstract int getLayoutResources();
+//    private View getCreateView(LayoutInflater inflater, ViewGroup container) {
+//        return inflater.inflate(getLayoutResources(), container, false);
+//    }
+
+//    /**
+//     * 获取布局文件
+//     *
+//     * @return
+//     */
+//    protected abstract int getLayoutResources();
 
     /**
      * 初始化view

@@ -3,6 +3,8 @@ package com.liuhao.orange;
 import android.app.Activity;
 import android.app.Application;
 
+import com.liuhao.orange.db.helper.DbCore;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -15,6 +17,8 @@ public class OrgApplication extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
+        //初始化数据库
+        DbCore.init(this);
     }
 
     @Override

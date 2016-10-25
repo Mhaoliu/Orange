@@ -2,6 +2,10 @@ package com.liuhao.orange.fragment;
 
 
 import android.support.v4.app.Fragment;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+
 import com.liuhao.orange.R;
 import com.liuhao.orange.base.BaseFragment;
 
@@ -10,9 +14,10 @@ import com.liuhao.orange.base.BaseFragment;
  */
 public class UtilsFragment extends BaseFragment {
 
+
     @Override
-    protected int getLayoutResources() {
-        return R.layout.fragment_utils;
+    protected View getCreateView(LayoutInflater inflater, ViewGroup container) {
+        return inflater.inflate(R.layout.fragment_utils, container, false);
     }
 
     @Override

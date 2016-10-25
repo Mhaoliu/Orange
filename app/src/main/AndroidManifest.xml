@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="com.liuhao.orange">
-
+    <!--网络权限-->
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <!-- 在SDCard中创建与删除文件权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <!-- 往SDCard写入数据权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
 
     <application
         android:name=".OrgApplication"
@@ -21,7 +26,10 @@
         </activity>
         <activity android:name=".activity.WebActivity">
         </activity>
-        <activity android:name=".activity.SearchWeatherActivity">
+        <activity
+            android:name=".activity.SearchWeatherActivity"
+            android:theme="@style/SearchWeatherTheme"
+            >
         </activity>
     </application>
 

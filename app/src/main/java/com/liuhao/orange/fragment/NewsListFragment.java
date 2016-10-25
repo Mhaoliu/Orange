@@ -7,7 +7,9 @@ import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.liuhao.orange.R;
@@ -63,9 +65,10 @@ public class NewsListFragment extends BaseFragment implements INewsListView {
     }
 
     @Override
-    protected int getLayoutResources() {
-        return R.layout.fragment_news_list;
+    protected View getCreateView(LayoutInflater inflater, ViewGroup container) {
+        return inflater.inflate(R.layout.fragment_news_list, container, false);
     }
+
 
     @Override
     protected void initView() {

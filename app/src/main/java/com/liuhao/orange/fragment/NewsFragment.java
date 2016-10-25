@@ -5,6 +5,9 @@ import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
 import android.support.v7.widget.Toolbar;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import android.widget.TableLayout;
 
@@ -33,8 +36,9 @@ public class NewsFragment extends BaseFragment {
     private List<BaseFragment> mFragmentList = new ArrayList<>();
 
     @Override
-    protected int getLayoutResources() {
-        return R.layout.fragment_news;
+    protected View getCreateView(LayoutInflater inflater, ViewGroup container) {
+
+        return inflater.inflate(R.layout.fragment_news, container, false);
     }
 
     @Override

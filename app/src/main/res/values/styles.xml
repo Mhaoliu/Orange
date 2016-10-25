@@ -7,8 +7,9 @@
         <item name="colorPrimaryDark">@color/normer</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
+
     <style name="RadioGroupMain">
-        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_width">0dp</item>Sear
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_weight">1</item>
         <item name="android:button">@null</item>
@@ -18,4 +19,13 @@
         <item name="android:textColor">@color/selector_rb_mian</item>
         <item name="android:drawablePadding">6dp</item>
     </style>
+
+    <style name="SearchWeatherTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@drawable/blur_bg_fog_and_haze</item>
+    </style>
+    <style name="WeatherTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- 设定窗口背景 -->
+        <item name="android:windowBackground">@drawable/bg_na</item>
+    </style>
+
 </resources>

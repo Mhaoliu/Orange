@@ -7,4 +7,5 @@
     <color name="tab_background">#e0e0e0</color>
     <color name="radio_button_text">#fcb33a</color>
     <color name="radio_button_text_normer">#cccccc</color>
+    <color name="search_bg_color">#2e2e2e</color>
 </resources>
