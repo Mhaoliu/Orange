@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RadioButton
+        android:id="@+id/vq0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/player_controller_background"
+        android:button="@null"
+        android:clickable="true"
+        android:gravity="center"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp"
+        android:text="标清"
+        android:textColor="@drawable/vidqtxt"
+        android:textSize="14sp" />
+
+    <RadioButton
+        android:id="@+id/vq1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/player_controller_background"
+        android:button="@null"
+        android:clickable="true"
+        android:gravity="center"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp"
+        android:text="高清"
+        android:textColor="@drawable/vidqtxt"
+        android:textSize="14sp" />
+
+    <RadioButton
+        android:id="@+id/vq2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/player_controller_background"
+        android:button="@null"
+        android:clickable="true"
+        android:gravity="center"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp"
+        android:text="超清"
+        android:textColor="@drawable/vidqtxt"
+        android:textSize="14sp" />
+
+</RadioGroup>

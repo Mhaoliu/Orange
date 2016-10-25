@@ -8,7 +8,23 @@
     <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
     <!-- 往SDCard写入数据权限 -->
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <!--百度地图-->
 
+    <!-- 这个权限用于进行网络定位-->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <!-- 这个权限用于访问GPS定位-->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位-->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位-->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <!-- 用于读取手机当前的状态-->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <!-- 写入扩展存储，向扩展卡写入数据，用于写入离线定位数据-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <!-- SD卡读取权限，用户写入离线定位数据-->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <!--百度地图-->
 
     <application
         android:name=".OrgApplication"
@@ -31,6 +47,43 @@
             android:theme="@style/SearchWeatherTheme"
             >
         </activity>
+        <!--百度地图-->
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" >
+            <intent-filter>
+                <action android:name="com.baidu.location.service_v2.2" >
+                </action>
+            </intent-filter>
+        </service>
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="pgvhyYlaugextWtRAjUrVoh2ffL1O19q"/>
+        <!--百度地图 end-->
+        <!-- 以下两个为下载时需要的添加的Service -->
+        <service
+            android:name="com.youku.service.download.DownloadService"
+            android:label="Youku Download Service"
+            android:process=":download" >
+            <intent-filter android:priority="1000" >
+                <action android:name="com.youku.service.download.DownloadService" />
+
+                <category android:name="com.youku.service.download.DownloadService" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.youku.service.acc.AcceleraterService"
+            android:process=":accelerater" >
+            <intent-filter android:priority="1000" >
+                <action android:name="com.youku.service.acc.AcceleraterService" />
+
+                <category android:name="com.youku.service.acc.AcceleraterService" />
+            </intent-filter>
+        </service>
+        <!-- client_id及client_secret配置  这里需要切换为自己的id和secret -->
+        <meta-data android:name="client_id" android:value="9304521996778fe7"/>
+        <meta-data android:name="client_secret" android:value="2d2ffaaa12642a4c6774e3af0401b2c8"/>
     </application>
 
 </manifest>

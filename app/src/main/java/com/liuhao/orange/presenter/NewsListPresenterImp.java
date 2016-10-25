@@ -3,7 +3,7 @@ package com.liuhao.orange.presenter;
 
 import android.content.Context;
 
-import com.liuhao.orange.base.IDownLoadListener;
+import com.liuhao.orange.listener.IDownLoadListener;
 import com.liuhao.orange.bean.NewsBean;
 import com.liuhao.orange.model.NewsListModelImp;
 import com.liuhao.orange.model.iface.INewsListModel;

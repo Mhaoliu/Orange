@@ -2,7 +2,7 @@ package com.liuhao.orange.model;
 
 import android.content.Context;
 
-import com.liuhao.orange.base.IDownLoadListener;
+import com.liuhao.orange.listener.IDownLoadListener;
 import com.liuhao.orange.bean.NewsBean;
 import com.liuhao.orange.constant.Constant;
 import com.liuhao.orange.http.news.HttpNewsInstance;

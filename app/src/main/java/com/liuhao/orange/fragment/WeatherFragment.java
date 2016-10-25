@@ -27,6 +27,7 @@ import com.liuhao.orange.constant.Constant;
 import com.liuhao.orange.presenter.WeatherPresenterImp;
 import com.liuhao.orange.presenter.iface.IWatherPresenter;
 import com.liuhao.orange.utils.log.LogUtils;
+import com.liuhao.orange.view.ILocationView;
 import com.liuhao.orange.view.IWeatherView;
 import com.liuhao.orange.width.RecycleViewDivider;
 
@@ -38,9 +39,9 @@ import butterknife.BindView;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class WeatherFragment extends BaseFragment implements IWeatherView {
+public class WeatherFragment extends BaseFragment implements IWeatherView, ILocationView {
     @BindView(R.id.tv_cityname)
-    TextView mTvCityname;
+    TextView mTvCityName;
     @BindView(R.id.data)
     TextView mData;
     @BindView(R.id.moon)
@@ -76,6 +77,7 @@ public class WeatherFragment extends BaseFragment implements IWeatherView {
     private List<WeatherLifeBean> mLifeList = new ArrayList();
     private WeatherInfoAdapter mWeatherInfoAdapter;
     private List<WeatherBean.DataBean.WeatherInfo> mWetherInfoList = new ArrayList();
+    private String mCityName;
 
     public WeatherFragment() {
     }
@@ -83,7 +85,7 @@ public class WeatherFragment extends BaseFragment implements IWeatherView {
 
     @Override
     protected View getCreateView(LayoutInflater inflater, ViewGroup container) {
-        Context contextThemeWrapper = new ContextThemeWrapper(getActivity(), R.style.WeatherTheme);
+        final Context contextThemeWrapper = new ContextThemeWrapper(getActivity(), R.style.WeatherTheme);
         LayoutInflater localInflater = inflater.cloneInContext(contextThemeWrapper);
         return localInflater.inflate(R.layout.fragment_weather, container, false);
     }
@@ -103,11 +105,13 @@ public class WeatherFragment extends BaseFragment implements IWeatherView {
         mWeatherLifeApater = new WeatherLifeApater(getActivity(), mLifeList, R.layout.item_weather_zhishu);
         mRecyLife.setAdapter(mWeatherLifeApater);
         mRecyLife.addItemDecoration(new RecycleViewDivider(getActivity(), LinearLayout.VERTICAL));
+
+        mTvCityName.setText(mCityName);
     }
 
     @Override
     protected void initData() {
-        mPresenter = new WeatherPresenterImp("武汉", this);
+        mPresenter = new WeatherPresenterImp(mCityName, this);
         mPresenter.loadWeather();
     }
 
@@ -116,7 +120,6 @@ public class WeatherFragment extends BaseFragment implements IWeatherView {
         mSearch.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Log.d("androidxx", "aaaaaaaaa");
                 Intent intent = new Intent(getActivity(), SearchWeatherActivity.class);
                 WeatherFragment.this.startActivityForResult(intent, Constant.REQUESTCODE);
             }
@@ -186,8 +189,19 @@ public class WeatherFragment extends BaseFragment implements IWeatherView {
         if (data != null) {
             if (requestCode == Constant.REQUESTCODE && resultCode == Constant.RESULTCODE) {
                 mPresenter.onSearch(data.getStringExtra("cityname"));
+                mTvCityName.setText(data.getStringExtra("cityname"));
             }
         }
+
+    }
+
+    @Override
+    public void onLocationSuccess(String cityName, String districtName) {
+        mCityName = cityName;
+    }
+
+    @Override
+    public void unLocationSuccessful(int type) {
 
     }
 }

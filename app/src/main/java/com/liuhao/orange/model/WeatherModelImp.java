@@ -1,8 +1,6 @@
 package com.liuhao.orange.model;
 
-import android.util.Log;
-
-import com.liuhao.orange.base.IDownLoadListener;
+import com.liuhao.orange.listener.IDownLoadListener;
 import com.liuhao.orange.bean.WeatherBean;
 import com.liuhao.orange.constant.Constant;
 import com.liuhao.orange.http.weather.HttpWeatherInstance;

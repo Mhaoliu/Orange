@@ -1,0 +1,672 @@
+[
+    {
+        "outputFile": "E:\\workproject\\Orange\\YoukuPlayerOpenSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 50,
+                    "endOffset": 101
+                },
+                "from": {
+                    "file": "E:\\workproject\\Orange\\YoukuPlayerOpenSDK\\build\\intermediates\\bundles\\debug\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 50,
+                        "endOffset": 101
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 106,
+                    "endColumn": 50,
+                    "endOffset": 152
+                },
+                "from": {
+                    "file": "E:\\workproject\\Orange\\YoukuPlayerOpenSDK\\build\\intermediates\\bundles\\debug\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 106,
+                        "endColumn": 50,
+                        "endOffset": 152
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 157,
+                    "endColumn": 49,
+                    "endOffset": 202
+                },
+                "from": {
+                    "file": "E:\\workproject\\Orange\\YoukuPlayerOpenSDK\\build\\intermediates\\bundles\\debug\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 157,
+                        "endColumn": 49,
+                        "endOffset": 202
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 207,
+                    "endColumn": 54,
+                    "endOffset": 257
+                },
+                "from": {
+                    "file": "E:\\workproject\\Orange\\YoukuPlayerOpenSDK\\build\\intermediates\\bundles\\debug\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 207,
+                        "endColumn": 54,
+                        "endOffset": 257
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 6,
+                    "startColumn": 4,
+                    "startOffset": 262,
+                    "endColumn": 49,
+                    "endOffset": 307
+                },
+                "from": {
+                    "file": "E:\\workproject\\Orange\\YoukuPlayerOpenSDK\\build\\intermediates\\bundles\\debug\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 262,
+                        "endColumn": 49,
+                        "endOffset": 307
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 7,
+                    "startColumn": 4,
+                    "startOffset": 312,
+                    "endColumn": 57,
+                    "endOffset": 365
+                },
+                "from": {
+                    "file": "E:\\workproject\\Orange\\YoukuPlayerOpenSDK\\build\\intermediates\\bundles\\debug\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 312,
+                        "endColumn": 57,
+                        "endOffset": 365
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 8,
+                    "startColumn": 4,
+                    "startOffset": 370,
+                    "endColumn": 51,
+                    "endOffset": 417
+                },
+                "from": {
+                    "file": "E:\\workproject\\Orange\\YoukuPlayerOpenSDK\\build\\intermediates\\bundles\\debug\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 370,
+                        "endColumn": 51,
+                        "endOffset": 417
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 9,
+                    "startColumn": 4,
+                    "startOffset": 422,
+                    "endColumn": 53,
+                    "endOffset": 471
+                },
+                "from": {
+                    "file": "E:\\workproject\\Orange\\YoukuPlayerOpenSDK\\build\\intermediates\\bundles\\debug\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 422,
+                        "endColumn": 53,
+                        "endOffset": 471
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 10,
+                    "startColumn": 4,
+                    "startOffset": 476,
+                    "endColumn": 49,
+                    "endOffset": 521
+                },
+                "from": {
+                    "file": "E:\\workproject\\Orange\\YoukuPlayerOpenSDK\\build\\intermediates\\bundles\\debug\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 4,
+                        "startOffset": 476,
+                        "endColumn": 49,
+                        "endOffset": 521
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 11,
+                    "startColumn": 4,
+                    "startOffset": 526,
+                    "endColumn": 57,
+                    "endOffset": 579
+                },
+                "from": {
+                    "file": "E:\\workproject\\Orange\\YoukuPlayerOpenSDK\\build\\intermediates\\bundles\\debug\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 4,
+                        "startOffset": 526,
+                        "endColumn": 57,
+                        "endOffset": 579
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 12,
+                    "startColumn": 4,
+                    "startOffset": 584,
+                    "endColumn": 52,
+                    "endOffset": 632
+                },
+                "from": {
+                    "file": "E:\\workproject\\Orange\\YoukuPlayerOpenSDK\\build\\intermediates\\bundles\\debug\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 4,
+                        "startOffset": 584,
+                        "endColumn": 52,
+                        "endOffset": 632
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 13,
+                    "startColumn": 4,
+                    "startOffset": 637,
+                    "endColumn": 53,
+                    "endOffset": 686
+                },
+                "from": {
+                    "file": "E:\\workproject\\Orange\\YoukuPlayerOpenSDK\\build\\intermediates\\bundles\\debug\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+                    "position": {
+                        "startLine": 13,
+                        "startColumn": 4,
+                        "startOffset": 637,
+                        "endColumn": 53,
+                        "endOffset": 686
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 14,
+                    "startColumn": 4,
+                    "startOffset": 691,
+                    "endColumn": 62,
+                    "endOffset": 749
+                },
+                "from": {
+                    "file": "E:\\workproject\\Orange\\YoukuPlayerOpenSDK\\build\\intermediates\\bundles\\debug\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+                    "position": {
+                        "startLine": 14,
+                        "startColumn": 4,
+                        "startOffset": 691,
+                        "endColumn": 62,
+                        "endOffset": 749
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 15,
+                    "startColumn": 4,
+                    "startOffset": 754,
+                    "endColumn": 60,
+                    "endOffset": 810
+                },
+                "from": {
+                    "file": "E:\\workproject\\Orange\\YoukuPlayerOpenSDK\\build\\intermediates\\bundles\\debug\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 4,
+                        "startOffset": 754,
+                        "endColumn": 60,
+                        "endOffset": 810
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 16,
+                    "startColumn": 4,
+                    "startOffset": 815,
+                    "endColumn": 58,
+                    "endOffset": 869
+                },
+                "from": {
+                    "file": "E:\\workproject\\Orange\\YoukuPlayerOpenSDK\\build\\intermediates\\bundles\\debug\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+                    "position": {
+                        "startLine": 16,
+                        "startColumn": 4,
+                        "startOffset": 815,
+                        "endColumn": 58,
+                        "endOffset": 869
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 17,
+                    "startColumn": 4,
+                    "startOffset": 874,
+                    "endColumn": 58,
+                    "endOffset": 928
+                },
+                "from": {
+                    "file": "E:\\workproject\\Orange\\YoukuPlayerOpenSDK\\build\\intermediates\\bundles\\debug\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+                    "position": {
+                        "startLine": 17,
+                        "startColumn": 4,
+                        "startOffset": 874,
+                        "endColumn": 58,
+                        "endOffset": 928
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 18,
+                    "startColumn": 4,
+                    "startOffset": 933,
+                    "endColumn": 58,
+                    "endOffset": 987
+                },
+                "from": {
+                    "file": "E:\\workproject\\Orange\\YoukuPlayerOpenSDK\\build\\intermediates\\bundles\\debug\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+                    "position": {
+                        "startLine": 18,
+                        "startColumn": 4,
+                        "startOffset": 933,
+                        "endColumn": 58,
+                        "endOffset": 987
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 19,
+                    "startColumn": 4,
+                    "startOffset": 992,
+                    "endColumn": 58,
+                    "endOffset": 1046
+                },
+                "from": {
+                    "file": "E:\\workproject\\Orange\\YoukuPlayerOpenSDK\\build\\intermediates\\bundles\\debug\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+                    "position": {
+                        "startLine": 19,
+                        "startColumn": 4,
+                        "startOffset": 992,
+                        "endColumn": 58,
+                        "endOffset": 1046
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 20,
+                    "startColumn": 4,
+                    "startOffset": 1051,
+                    "endColumn": 40,
+                    "endOffset": 1087
+                },
+                "from": {
+                    "file": "E:\\workproject\\Orange\\YoukuPlayerOpenSDK\\build\\intermediates\\bundles\\debug\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+                    "position": {
+                        "startLine": 20,
+                        "startColumn": 4,
+                        "startOffset": 1051,
+                        "endColumn": 40,
+                        "endOffset": 1087
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 21,
+                    "startColumn": 4,
+                    "startOffset": 1092,
+                    "endColumn": 39,
+                    "endOffset": 1127
+                },
+                "from": {
+                    "file": "E:\\workproject\\Orange\\YoukuPlayerOpenSDK\\build\\intermediates\\bundles\\debug\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+                    "position": {
+                        "startLine": 21,
+                        "startColumn": 4,
+                        "startOffset": 1092,
+                        "endColumn": 39,
+                        "endOffset": 1127
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 22,
+                    "startColumn": 4,
+                    "startOffset": 1132,
+                    "endColumn": 40,
+                    "endOffset": 1168
+                },
+                "from": {
+                    "file": "E:\\workproject\\Orange\\YoukuPlayerOpenSDK\\build\\intermediates\\bundles\\debug\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+                    "position": {
+                        "startLine": 22,
+                        "startColumn": 4,
+                        "startOffset": 1132,
+                        "endColumn": 40,
+                        "endOffset": 1168
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 23,
+                    "startColumn": 4,
+                    "startOffset": 1173,
+                    "endColumn": 39,
+                    "endOffset": 1208
+                },
+                "from": {
+                    "file": "E:\\workproject\\Orange\\YoukuPlayerOpenSDK\\build\\intermediates\\bundles\\debug\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+                    "position": {
+                        "startLine": 23,
+                        "startColumn": 4,
+                        "startOffset": 1173,
+                        "endColumn": 39,
+                        "endOffset": 1208
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 24,
+                    "startColumn": 4,
+                    "startOffset": 1213,
+                    "endColumn": 66,
+                    "endOffset": 1275
+                },
+                "from": {
+                    "file": "E:\\workproject\\Orange\\YoukuPlayerOpenSDK\\build\\intermediates\\bundles\\debug\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+                    "position": {
+                        "startLine": 24,
+                        "startColumn": 4,
+                        "startOffset": 1213,
+                        "endColumn": 66,
+                        "endOffset": 1275
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 25,
+                    "startColumn": 4,
+                    "startOffset": 1280,
+                    "endColumn": 62,
+                    "endOffset": 1338
+                },
+                "from": {
+                    "file": "E:\\workproject\\Orange\\YoukuPlayerOpenSDK\\build\\intermediates\\bundles\\debug\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+                    "position": {
+                        "startLine": 25,
+                        "startColumn": 4,
+                        "startOffset": 1280,
+                        "endColumn": 62,
+                        "endOffset": 1338
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 26,
+                    "startColumn": 4,
+                    "startOffset": 1343,
+                    "endColumn": 57,
+                    "endOffset": 1396
+                },
+                "from": {
+                    "file": "E:\\workproject\\Orange\\YoukuPlayerOpenSDK\\build\\intermediates\\bundles\\debug\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+                    "position": {
+                        "startLine": 26,
+                        "startColumn": 4,
+                        "startOffset": 1343,
+                        "endColumn": 57,
+                        "endOffset": 1396
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 27,
+                    "startColumn": 4,
+                    "startOffset": 1401,
+                    "endColumn": 52,
+                    "endOffset": 1449
+                },
+                "from": {
+                    "file": "E:\\workproject\\Orange\\YoukuPlayerOpenSDK\\build\\intermediates\\bundles\\debug\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+                    "position": {
+                        "startLine": 27,
+                        "startColumn": 4,
+                        "startOffset": 1401,
+                        "endColumn": 52,
+                        "endOffset": 1449
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 28,
+                    "startColumn": 4,
+                    "startOffset": 1454,
+                    "endColumn": 60,
+                    "endOffset": 1510
+                },
+                "from": {
+                    "file": "E:\\workproject\\Orange\\YoukuPlayerOpenSDK\\build\\intermediates\\bundles\\debug\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+                    "position": {
+                        "startLine": 28,
+                        "startColumn": 4,
+                        "startOffset": 1454,
+                        "endColumn": 60,
+                        "endOffset": 1510
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 29,
+                    "startColumn": 4,
+                    "startOffset": 1515,
+                    "endColumn": 66,
+                    "endOffset": 1577
+                },
+                "from": {
+                    "file": "E:\\workproject\\Orange\\YoukuPlayerOpenSDK\\build\\intermediates\\bundles\\debug\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+                    "position": {
+                        "startLine": 29,
+                        "startColumn": 4,
+                        "startOffset": 1515,
+                        "endColumn": 66,
+                        "endOffset": 1577
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 30,
+                    "startColumn": 4,
+                    "startOffset": 1582,
+                    "endColumn": 62,
+                    "endOffset": 1640
+                },
+                "from": {
+                    "file": "E:\\workproject\\Orange\\YoukuPlayerOpenSDK\\build\\intermediates\\bundles\\debug\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+                    "position": {
+                        "startLine": 30,
+                        "startColumn": 4,
+                        "startOffset": 1582,
+                        "endColumn": 62,
+                        "endOffset": 1640
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 31,
+                    "startColumn": 4,
+                    "startOffset": 1645,
+                    "endColumn": 55,
+                    "endOffset": 1696
+                },
+                "from": {
+                    "file": "E:\\workproject\\Orange\\YoukuPlayerOpenSDK\\build\\intermediates\\bundles\\debug\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+                    "position": {
+                        "startLine": 31,
+                        "startColumn": 4,
+                        "startOffset": 1645,
+                        "endColumn": 55,
+                        "endOffset": 1696
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 32,
+                    "startColumn": 4,
+                    "startOffset": 1701,
+                    "endColumn": 57,
+                    "endOffset": 1754
+                },
+                "from": {
+                    "file": "E:\\workproject\\Orange\\YoukuPlayerOpenSDK\\build\\intermediates\\bundles\\debug\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+                    "position": {
+                        "startLine": 32,
+                        "startColumn": 4,
+                        "startOffset": 1701,
+                        "endColumn": 57,
+                        "endOffset": 1754
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 33,
+                    "startColumn": 4,
+                    "startOffset": 1759,
+                    "endColumn": 60,
+                    "endOffset": 1815
+                },
+                "from": {
+                    "file": "E:\\workproject\\Orange\\YoukuPlayerOpenSDK\\build\\intermediates\\bundles\\debug\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+                    "position": {
+                        "startLine": 33,
+                        "startColumn": 4,
+                        "startOffset": 1759,
+                        "endColumn": 60,
+                        "endOffset": 1815
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 34,
+                    "startColumn": 4,
+                    "startOffset": 1820,
+                    "endColumn": 54,
+                    "endOffset": 1870
+                },
+                "from": {
+                    "file": "E:\\workproject\\Orange\\YoukuPlayerOpenSDK\\build\\intermediates\\bundles\\debug\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+                    "position": {
+                        "startLine": 34,
+                        "startColumn": 4,
+                        "startOffset": 1820,
+                        "endColumn": 54,
+                        "endOffset": 1870
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 35,
+                    "startColumn": 4,
+                    "startOffset": 1875,
+                    "endColumn": 66,
+                    "endOffset": 1937
+                },
+                "from": {
+                    "file": "E:\\workproject\\Orange\\YoukuPlayerOpenSDK\\build\\intermediates\\bundles\\debug\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+                    "position": {
+                        "startLine": 35,
+                        "startColumn": 4,
+                        "startOffset": 1875,
+                        "endColumn": 66,
+                        "endOffset": 1937
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 36,
+                    "startColumn": 4,
+                    "startOffset": 1942,
+                    "endColumn": 53,
+                    "endOffset": 1991
+                },
+                "from": {
+                    "file": "E:\\workproject\\Orange\\YoukuPlayerOpenSDK\\build\\intermediates\\bundles\\debug\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+                    "position": {
+                        "startLine": 36,
+                        "startColumn": 4,
+                        "startOffset": 1942,
+                        "endColumn": 53,
+                        "endOffset": 1991
+                    }
+                }
+            }
+        ]
+    }
+]

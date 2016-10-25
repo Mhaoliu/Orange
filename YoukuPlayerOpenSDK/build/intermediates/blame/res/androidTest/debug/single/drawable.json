@@ -1,0 +1,38 @@
+[
+    {
+        "merged": "E:\\workproject\\Orange\\YoukuPlayerOpenSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\vidqbg.xml",
+        "source": "E:\\workproject\\Orange\\YoukuPlayerOpenSDK\\build\\intermediates\\bundles\\debug\\res\\drawable\\vidqbg.xml"
+    },
+    {
+        "merged": "E:\\workproject\\Orange\\YoukuPlayerOpenSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\vidqtxt.xml",
+        "source": "E:\\workproject\\Orange\\YoukuPlayerOpenSDK\\build\\intermediates\\bundles\\debug\\res\\drawable\\vidqtxt.xml"
+    },
+    {
+        "merged": "E:\\workproject\\Orange\\YoukuPlayerOpenSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\yp_progress_holo_light.xml",
+        "source": "E:\\workproject\\Orange\\YoukuPlayerOpenSDK\\build\\intermediates\\bundles\\debug\\res\\drawable\\yp_progress_holo_light.xml"
+    },
+    {
+        "merged": "E:\\workproject\\Orange\\YoukuPlayerOpenSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\yp_progressthumbstyle.xml",
+        "source": "E:\\workproject\\Orange\\YoukuPlayerOpenSDK\\build\\intermediates\\bundles\\debug\\res\\drawable\\yp_progressthumbstyle.xml"
+    },
+    {
+        "merged": "E:\\workproject\\Orange\\YoukuPlayerOpenSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\popwinselector.xml",
+        "source": "E:\\workproject\\Orange\\YoukuPlayerOpenSDK\\build\\intermediates\\bundles\\debug\\res\\drawable\\popwinselector.xml"
+    },
+    {
+        "merged": "E:\\workproject\\Orange\\YoukuPlayerOpenSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\play_title_bkg.xml",
+        "source": "E:\\workproject\\Orange\\YoukuPlayerOpenSDK\\build\\intermediates\\bundles\\debug\\res\\drawable\\play_title_bkg.xml"
+    },
+    {
+        "merged": "E:\\workproject\\Orange\\YoukuPlayerOpenSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\nonedrawable.xml",
+        "source": "E:\\workproject\\Orange\\YoukuPlayerOpenSDK\\build\\intermediates\\bundles\\debug\\res\\drawable\\nonedrawable.xml"
+    },
+    {
+        "merged": "E:\\workproject\\Orange\\YoukuPlayerOpenSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\quality_bkg.xml",
+        "source": "E:\\workproject\\Orange\\YoukuPlayerOpenSDK\\build\\intermediates\\bundles\\debug\\res\\drawable\\quality_bkg.xml"
+    },
+    {
+        "merged": "E:\\workproject\\Orange\\YoukuPlayerOpenSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\yp_progressbarstyle.xml",
+        "source": "E:\\workproject\\Orange\\YoukuPlayerOpenSDK\\build\\intermediates\\bundles\\debug\\res\\drawable\\yp_progressbarstyle.xml"
+    }
+]

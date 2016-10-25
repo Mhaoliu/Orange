@@ -1,0 +1,58 @@
+[
+    {
+        "merged": "E:\\workproject\\Orange\\YoukuPlayerOpenSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\yp_detail_play_end_page.xml",
+        "source": "E:\\workproject\\Orange\\YoukuPlayerOpenSDK\\build\\intermediates\\bundles\\debug\\res\\layout\\yp_detail_play_end_page.xml"
+    },
+    {
+        "merged": "E:\\workproject\\Orange\\YoukuPlayerOpenSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\yp_player_view.xml",
+        "source": "E:\\workproject\\Orange\\YoukuPlayerOpenSDK\\build\\intermediates\\bundles\\debug\\res\\layout\\yp_player_view.xml"
+    },
+    {
+        "merged": "E:\\workproject\\Orange\\YoukuPlayerOpenSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\yp_detail_loading_info_page.xml",
+        "source": "E:\\workproject\\Orange\\YoukuPlayerOpenSDK\\build\\intermediates\\bundles\\debug\\res\\layout\\yp_detail_loading_info_page.xml"
+    },
+    {
+        "merged": "E:\\workproject\\Orange\\YoukuPlayerOpenSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\yp_tudou_encrypt_dialog.xml",
+        "source": "E:\\workproject\\Orange\\YoukuPlayerOpenSDK\\build\\intermediates\\bundles\\debug\\res\\layout\\yp_tudou_encrypt_dialog.xml"
+    },
+    {
+        "merged": "E:\\workproject\\Orange\\YoukuPlayerOpenSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\yp_detail_play_title.xml",
+        "source": "E:\\workproject\\Orange\\YoukuPlayerOpenSDK\\build\\intermediates\\bundles\\debug\\res\\layout\\yp_detail_play_title.xml"
+    },
+    {
+        "merged": "E:\\workproject\\Orange\\YoukuPlayerOpenSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\vidqitem.xml",
+        "source": "E:\\workproject\\Orange\\YoukuPlayerOpenSDK\\build\\intermediates\\bundles\\debug\\res\\layout\\vidqitem.xml"
+    },
+    {
+        "merged": "E:\\workproject\\Orange\\YoukuPlayerOpenSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\yp_plugin_detail_play_interact.xml",
+        "source": "E:\\workproject\\Orange\\YoukuPlayerOpenSDK\\build\\intermediates\\bundles\\debug\\res\\layout\\yp_plugin_detail_play_interact.xml"
+    },
+    {
+        "merged": "E:\\workproject\\Orange\\YoukuPlayerOpenSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\yp_detail_retry.xml",
+        "source": "E:\\workproject\\Orange\\YoukuPlayerOpenSDK\\build\\intermediates\\bundles\\debug\\res\\layout\\yp_detail_retry.xml"
+    },
+    {
+        "merged": "E:\\workproject\\Orange\\YoukuPlayerOpenSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\yp_youku_dialog_password_interact.xml",
+        "source": "E:\\workproject\\Orange\\YoukuPlayerOpenSDK\\build\\intermediates\\bundles\\debug\\res\\layout\\yp_youku_dialog_password_interact.xml"
+    },
+    {
+        "merged": "E:\\workproject\\Orange\\YoukuPlayerOpenSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\yp_player_ad_youku.xml",
+        "source": "E:\\workproject\\Orange\\YoukuPlayerOpenSDK\\build\\intermediates\\bundles\\debug\\res\\layout\\yp_player_ad_youku.xml"
+    },
+    {
+        "merged": "E:\\workproject\\Orange\\YoukuPlayerOpenSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\yp_detail_bottom_play_control.xml",
+        "source": "E:\\workproject\\Orange\\YoukuPlayerOpenSDK\\build\\intermediates\\bundles\\debug\\res\\layout\\yp_detail_bottom_play_control.xml"
+    },
+    {
+        "merged": "E:\\workproject\\Orange\\YoukuPlayerOpenSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\notify.xml",
+        "source": "E:\\workproject\\Orange\\YoukuPlayerOpenSDK\\build\\intermediates\\bundles\\debug\\res\\layout\\notify.xml"
+    },
+    {
+        "merged": "E:\\workproject\\Orange\\YoukuPlayerOpenSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\yp_player_container.xml",
+        "source": "E:\\workproject\\Orange\\YoukuPlayerOpenSDK\\build\\intermediates\\bundles\\debug\\res\\layout\\yp_player_container.xml"
+    },
+    {
+        "merged": "E:\\workproject\\Orange\\YoukuPlayerOpenSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\yp_detail_play_loading.xml",
+        "source": "E:\\workproject\\Orange\\YoukuPlayerOpenSDK\\build\\intermediates\\bundles\\debug\\res\\layout\\yp_detail_play_loading.xml"
+    }
+]
