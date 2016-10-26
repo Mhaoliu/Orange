@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
           package="com.liuhao.orange">
     <!--网络权限-->
     <uses-permission android:name="android.permission.INTERNET"/>
@@ -9,7 +10,6 @@
     <!-- 往SDCard写入数据权限 -->
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
     <!--百度地图-->
-
     <!-- 这个权限用于进行网络定位-->
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
     <!-- 这个权限用于访问GPS定位-->
@@ -25,14 +25,25 @@
     <!-- SD卡读取权限，用户写入离线定位数据-->
     <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
     <!--百度地图-->
-
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <!-- uses-permission android:name="com.android.launcher.permission.WRITE_SETTINGS" /-->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <!-- <uses-permission android:name="android.permission.INTERNAL_SYSTEM_WINDOW"/> -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <!--优酷-->
     <application
         android:name=".OrgApplication"
         android:allowBackup="true"
-        android:icon="@drawable/ic_launcher"
+        android:icon="@drawable/app_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon,android:theme"
+        >
         <activity android:name=".activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
@@ -51,9 +62,9 @@
         <service
             android:name="com.baidu.location.f"
             android:enabled="true"
-            android:process=":remote" >
+            android:process=":remote">
             <intent-filter>
-                <action android:name="com.baidu.location.service_v2.2" >
+                <action android:name="com.baidu.location.service_v2.2">
                 </action>
             </intent-filter>
         </service>
@@ -61,29 +72,46 @@
             android:name="com.baidu.lbsapi.API_KEY"
             android:value="pgvhyYlaugextWtRAjUrVoh2ffL1O19q"/>
         <!--百度地图 end-->
+        <!-- 播放界面demo -->
+        <activity
+            android:name=".activity.PlayerActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="true"
+            android:launchMode="singleTask"
+            >
+        </activity>
+        <!-- 已经缓存的视频界面demo -->
+        <activity
+            android:name=".activity.CachedActivity"
+            />
+        <activity android:name=".activity.CachingActivity"/>
         <!-- 以下两个为下载时需要的添加的Service -->
         <service
             android:name="com.youku.service.download.DownloadService"
             android:label="Youku Download Service"
-            android:process=":download" >
-            <intent-filter android:priority="1000" >
-                <action android:name="com.youku.service.download.DownloadService" />
+            android:process=":download">
+            <intent-filter android:priority="1000">
+                <action android:name="com.youku.service.download.DownloadService"/>
 
-                <category android:name="com.youku.service.download.DownloadService" />
+                <category android:name="com.youku.service.download.DownloadService"/>
             </intent-filter>
         </service>
         <service
             android:name="com.youku.service.acc.AcceleraterService"
-            android:process=":accelerater" >
-            <intent-filter android:priority="1000" >
-                <action android:name="com.youku.service.acc.AcceleraterService" />
+            android:process=":accelerater">
+            <intent-filter android:priority="1000">
+                <action android:name="com.youku.service.acc.AcceleraterService"/>
 
-                <category android:name="com.youku.service.acc.AcceleraterService" />
+                <category android:name="com.youku.service.acc.AcceleraterService"/>
             </intent-filter>
         </service>
         <!-- client_id及client_secret配置  这里需要切换为自己的id和secret -->
-        <meta-data android:name="client_id" android:value="9304521996778fe7"/>
-        <meta-data android:name="client_secret" android:value="2d2ffaaa12642a4c6774e3af0401b2c8"/>
+        <meta-data
+            android:name="client_id"
+            android:value="9304521996778fe7"/>
+        <meta-data
+            android:name="client_secret"
+            android:value="2d2ffaaa12642a4c6774e3af0401b2c8"/>
     </application>
 
 </manifest>

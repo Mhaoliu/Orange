@@ -27,5 +27,10 @@
         <!-- 设定窗口背景 -->
         <item name="android:windowBackground">@drawable/bg_na</item>
     </style>
-
+    <!--自己定义dialog-->
+    <style name="CustomDialogStyle" parent="@style/AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
 </resources>

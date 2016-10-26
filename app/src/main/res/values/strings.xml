@@ -2,7 +2,7 @@
     <string name="app_name">Orange</string>
     <string name="app_data_loading">正在加载中...</string>
     <string name="mian_rb_news">新闻</string>
-    <string name="mian_rb_utils">工具</string>
+    <string name="mian_rb_utils">视频</string>
     <string name="mian_rb_weather">天气</string>
     <string name="mian_rb_me">我的</string>
     <string name="weather_search">搜索天气</string>
@@ -20,5 +20,11 @@
         <item>武汉</item>
         <item>重庆</item>
         <item>香港</item>
+    </array>
+    <array name="video_qingxidu">
+        <item>标清</item>
+        <item>高清</item>
+        <item>超清</item>
+        <item>1080P</item>
     </array>
 </resources>

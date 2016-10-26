@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_margin="5dp"
+              android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        >
+
+        <ImageView
+            android:id="@+id/iv_thumbnail"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/default_error"
+            />
+
+        <ImageView
+            android:id="@+id/iv_paly"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/tudou_details_big_play_icon"
+            />
+
+        <TextView
+            android:id="@+id/tv_seconds"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/iv_thumbnail"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="10dp"
+            android:textColor="#ffffff"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        >
+
+        <TextView
+            android:id="@+id/tv_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/video_text"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            />
+
+        <TextView
+            android:id="@+id/category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@+id/tv_user_name"
+            android:background="@drawable/video_text"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            />
+    </RelativeLayout>
+</LinearLayout>

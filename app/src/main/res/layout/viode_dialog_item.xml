@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_margin="10dp"
+              >
+
+    <TextView
+        android:id="@+id/tv_qingxidu"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/video_dialog_text"
+        android:textSize="20sp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingBottom="6dp"
+        android:paddingTop="6dp"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        />
+</FrameLayout>

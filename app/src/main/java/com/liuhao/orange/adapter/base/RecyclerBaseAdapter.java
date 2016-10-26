@@ -54,6 +54,7 @@ public abstract class RecyclerBaseAdapter<T> extends RecyclerView.Adapter<Recycl
         }
         View view = LayoutInflater.from(mContext).inflate(layoutId, parent, false);
         RecycleViewHolder holder = new RecycleViewHolder(view);
+
         return holder;
     }
 

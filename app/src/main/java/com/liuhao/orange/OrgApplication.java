@@ -5,6 +5,8 @@ import android.app.Application;
 import android.app.Service;
 import android.os.Vibrator;
 
+import com.liuhao.orange.activity.CachedActivity;
+import com.liuhao.orange.activity.CachingActivity;
 import com.liuhao.orange.baidu.LocationService;
 import com.liuhao.orange.db.helper.DbCore;
 import com.youku.player.YoukuPlayerBaseConfiguration;
@@ -40,7 +42,7 @@ public class OrgApplication extends Application {
              */
             @Override
             public Class<? extends Activity> getCachingActivityClass() {
-                return null;
+                return CachingActivity.class;
             }
 
             /**
@@ -51,7 +53,7 @@ public class OrgApplication extends Application {
 
             @Override
             public Class<? extends Activity> getCachedActivityClass() {
-                return null;
+                return CachedActivity.class;
             }
 
             /**
@@ -62,7 +64,7 @@ public class OrgApplication extends Application {
             @Override
             public String configDownloadPath() {
 
-                return "/Orange/videocache/";
+                return null;
             }
         };
     }
