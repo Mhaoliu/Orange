@@ -3,26 +3,39 @@
               android:layout_width="match_parent"
               android:layout_height="wrap_content"
               android:layout_margin="5dp"
-              android:orientation="vertical">
+              android:orientation="vertical"
+              >
 
-    <TextView
-        android:id="@+id/zhishu_name"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="指数"
-        />
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        >
 
-    <TextView
-        android:id="@+id/zhishu"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="较舒适"
-        />
+        <TextView
+            android:id="@+id/zhishu_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/normer"
+            android:textSize="14sp"
+            />
+
+        <TextView
+            android:id="@+id/zhishu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="较舒适"
+            />
+
+    </LinearLayout>
 
     <TextView
         android:id="@+id/jianyi"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
         android:text="建议着薄外套、开衫牛仔衫裤等服装。年老体弱者应适当添加衣物，宜着夹克衫、薄毛衣等"
         />
 </LinearLayout>

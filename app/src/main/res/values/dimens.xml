@@ -6,4 +6,7 @@
     <dimen name="news_list_item_padding">8dp</dimen>
     <dimen name="news_title_size">14sp</dimen>
     <dimen name="news_data_size">10sp</dimen>
+    <dimen name="app_bar_height">180dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
 </resources>

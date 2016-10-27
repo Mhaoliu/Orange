@@ -89,7 +89,7 @@ public class NetworkConnection {
 
 
     /**
-     * 获取当前的网络状态 ：没有网络0：WIFI网络1：3G网络2：2G网络3
+     * 获取当前的网络状态 ：没有网络0：WIFI网络1：移动网络2
      *
      * @param context
      * @return
@@ -106,15 +106,7 @@ public class NetworkConnection {
         if (nType == ConnectivityManager.TYPE_WIFI) {
             netType = 1;// wifi
         } else if (nType == ConnectivityManager.TYPE_MOBILE) {
-            int nSubType = networkInfo.getSubtype();
-            TelephonyManager mTelephony = (TelephonyManager) context
-                    .getSystemService(Context.TELEPHONY_SERVICE);
-            if (nSubType == TelephonyManager.NETWORK_TYPE_UMTS
-                    && !mTelephony.isNetworkRoaming()) {
-                netType = 2;// 3G
-            } else {
-                netType = 3;// 2G
-            }
+            netType = 2;//移动网络
         }
         return netType;
     }

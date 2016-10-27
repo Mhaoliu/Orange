@@ -1,8 +1,10 @@
 package com.liuhao.orange.adapter;
 
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 
@@ -11,7 +13,10 @@ import com.liuhao.orange.R;
 import com.liuhao.orange.activity.PlayerActivity;
 import com.liuhao.orange.adapter.base.RecycleViewHolder;
 import com.liuhao.orange.adapter.base.RecyclerBaseAdapter;
+import com.liuhao.orange.base.BaseActivity;
 import com.liuhao.orange.http.video.VideoInfo;
+import com.liuhao.orange.utils.network.NetworkConnection;
+import com.liuhao.orange.width.CustomDialog;
 
 import java.util.List;
 
@@ -35,12 +40,39 @@ public class VideoListAdapter extends RecyclerBaseAdapter<VideoInfo.VideosBean> 
         paly.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(mContext, PlayerActivity.class);
-                Bundle bundle = new Bundle();
-                bundle.putParcelable("videobean", model);
-                i.putExtras(bundle);
-                mContext.startActivity(i);
-
+                if (!NetworkConnection.isNetworkConnected(VideoListAdapter.super.mContext)) {
+                    ((BaseActivity) VideoListAdapter.super.mContext).showToast("网络没用连接", 1000);
+                    return;
+                } else if (NetworkConnection.getAPNType(VideoListAdapter.super.mContext) == 2) {
+                    CustomDialog.Builder customBuilder = new
+                            CustomDialog.Builder(VideoListAdapter.super.mContext);
+                    customBuilder.setTitle("警告")
+                            .setMessage("当前为移动网络，是否播放")
+                            .setNegativeButton("取消", new DialogInterface.OnClickListener() {
+                                public void onClick(DialogInterface dialog, int which) {
+                                    dialog.dismiss();
+                                }
+                            })
+                            .setPositiveButton("确定",
+                                    new DialogInterface.OnClickListener() {
+                                        public void onClick(DialogInterface dialog, int which) {
+                                            dialog.dismiss();
+                                            Intent i = new Intent(mContext, PlayerActivity.class);
+                                            Bundle bundle = new Bundle();
+                                            bundle.putParcelable("videobean", model);
+                                            i.putExtras(bundle);
+                                            mContext.startActivity(i);
+                                        }
+                                    });
+                    CustomDialog dialog = customBuilder.create();
+                    dialog.show();
+                } else {
+                    Intent i = new Intent(mContext, PlayerActivity.class);
+                    Bundle bundle = new Bundle();
+                    bundle.putParcelable("videobean", model);
+                    i.putExtras(bundle);
+                    mContext.startActivity(i);
+                }
             }
         });
     }

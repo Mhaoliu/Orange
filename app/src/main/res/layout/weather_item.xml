@@ -4,6 +4,7 @@
               android:layout_width="match_parent"
               android:layout_height="match_parent"
               android:orientation="vertical"
+
     >
 
     <LinearLayout
@@ -104,6 +105,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="生活指数"
+        android:textSize="16sp"
+        android:textColor="@color/normer"
         />
 
     <android.support.v7.widget.RecyclerView
@@ -111,6 +114,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
         />
 
     <View
@@ -124,6 +129,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="未来5天天气"
+        android:textSize="16sp"
+        android:textColor="@color/normer"
         />
 
     <android.support.v7.widget.RecyclerView
@@ -144,6 +151,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="空气质量"
+        android:textSize="16sp"
+        android:textColor="@color/normer"
         />
 
     <TextView

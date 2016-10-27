@@ -14,7 +14,6 @@
             android:id="@+id/collapse_toolbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:contentScrim="#ffffff"
             app:layout_scrollFlags="scroll|enterAlways"
             app:titleEnabled="false"
             app:toolbarId="@+id/weather_toolbar"
@@ -25,7 +24,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="45dp"
                 app:layout_collapseMode="pin"
-
                 >
 
                 <TextView
@@ -33,6 +31,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
+                    android:textColor="#ffffff"
                     />
             </android.support.v7.widget.Toolbar>
         </android.support.design.widget.CollapsingToolbarLayout>
@@ -40,7 +39,6 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:background="#ffffff"
             >
 
             <TextView
@@ -49,11 +47,9 @@
                 android:layout_height="25dp"
                 android:layout_centerInParent="true"
                 android:background="@drawable/weather_search"
-                android:focusable="true"
                 android:gravity="center"
-                android:hint="@string/weather_search"
-                android:onClick="onClick"
-                android:textColor="#000000"
+                android:text="搜索天气"
+                android:textColor="#ffffff"
                 />
         </RelativeLayout>
 

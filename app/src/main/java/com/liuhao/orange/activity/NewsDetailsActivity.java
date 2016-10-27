@@ -1,31 +1,63 @@
 package com.liuhao.orange.activity;
 
-
 import android.content.Intent;
 import android.graphics.Bitmap;
+import android.graphics.Color;
 import android.net.Uri;
+import android.support.design.widget.CollapsingToolbarLayout;
+import android.support.v7.widget.Toolbar;
+import android.view.View;
+import android.view.WindowManager;
 import android.webkit.WebChromeClient;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+import android.widget.ImageView;
+
+import com.bumptech.glide.Glide;
 import com.liuhao.orange.R;
 import com.liuhao.orange.base.BaseActivity;
 import com.liuhao.orange.utils.log.LogUtils;
+
 import butterknife.BindView;
 
-public class WebActivity extends BaseActivity {
+public class NewsDetailsActivity extends BaseActivity {
     @BindView(R.id.webview)
     WebView mWebView;
+    @BindView(R.id.details_toolbar)
+    Toolbar mToolbar;
+    @BindView(R.id.iv_title_img)
+    ImageView mTitleImg;
+    @BindView(R.id.collapse_toolbar_layout)
+    CollapsingToolbarLayout mToolbarLayout;
     private String mWebPath;
+    private String mImgPath;
 
     @Override
     protected void initContentView() {
-        mWebPath = getIntent().getStringExtra("webpath");
-        LogUtils.i("webpath", mWebPath);
-        setContentView(R.layout.activity_web);
+        onNewIntent(getIntent());
+        getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
+        setContentView(R.layout.activity_news_details);
+    }
+
+    @Override
+    protected void onNewIntent(Intent intent) {
+        super.onNewIntent(intent);
+        if (intent != null) {
+            mWebPath = intent.getStringExtra("webpath");
+            mImgPath = intent.getStringExtra("imgpath");
+            LogUtils.i("webpath", mWebPath);
+            LogUtils.i("imgpath", mImgPath);
+        }
     }
 
     @Override
     protected void initView() {
+        mToolbar.setTitle("");
+        mToolbarLayout.setTitle("新闻详情");
+        mToolbarLayout.setExpandedTitleColor(Color.WHITE);
+        mToolbarLayout.setCollapsedTitleTextColor(Color.WHITE);
+        setSupportActionBar(mToolbar);
+        Glide.with(this).load(mImgPath).into(mTitleImg);
         // 设置编码
         mWebView.getSettings().setDefaultTextEncodingName("utf-8");
         // 设置javaweb可以促发
@@ -87,3 +119,4 @@ public class WebActivity extends BaseActivity {
     }
 
 }
+

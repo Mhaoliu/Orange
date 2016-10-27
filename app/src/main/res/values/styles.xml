@@ -3,8 +3,8 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/normer</item>
-        <item name="colorPrimaryDark">@color/normer</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
@@ -19,18 +19,28 @@
         <item name="android:textColor">@color/selector_rb_mian</item>
         <item name="android:drawablePadding">6dp</item>
     </style>
-
+    <!--搜索天气栏-->
     <style name="SearchWeatherTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="android:windowBackground">@drawable/blur_bg_fog_and_haze</item>
     </style>
-    <style name="WeatherTheme" parent="Theme.AppCompat.Light.NoActionBar">
-        <!-- 设定窗口背景 -->
-        <item name="android:windowBackground">@drawable/bg_na</item>
-    </style>
+
     <!--自己定义dialog-->
     <style name="CustomDialogStyle" parent="@style/AppTheme">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:windowIsFloating">true</item>
     </style>
+
+    <style name="CustomDialogStyleTwo" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item><!--边框-->
+        <item name="android:windowNoTitle">true</item><!--无标题-->
+        <item name="android:windowBackground">@drawable/bg_title_custom_dialog</item><!--背景-->
+    </style>
+
+
+    <!--新闻详情栏-->
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
 </resources>

@@ -6,14 +6,12 @@ import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
 import com.liuhao.orange.R;
-import com.liuhao.orange.activity.WebActivity;
+import com.liuhao.orange.activity.NewsDetailsActivity;
 import com.liuhao.orange.adapter.NewsListAdapter;
 import com.liuhao.orange.adapter.base.RecyclerBaseAdapter;
 import com.liuhao.orange.base.BaseFragment;
@@ -91,8 +89,9 @@ public class NewsListFragment extends BaseFragment implements INewsListView {
             @Override
             public void onItemClick(View view, int position) {
                 if (mNewsList != null && mNewsList.get(position) != null) {
-                    Intent intent = new Intent(getActivity(), WebActivity.class);
+                    Intent intent = new Intent(getActivity(), NewsDetailsActivity.class);
                     intent.putExtra("webpath", mNewsList.get(position).getUrl());
+                    intent.putExtra("imgpath", mNewsList.get(position).getThumbnail_pic_s());
                     getActivity().startActivity(intent);
                 }
             }

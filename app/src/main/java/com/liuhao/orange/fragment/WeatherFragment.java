@@ -9,7 +9,6 @@ import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -85,9 +84,8 @@ public class WeatherFragment extends BaseFragment implements IWeatherView, ILoca
 
     @Override
     protected View getCreateView(LayoutInflater inflater, ViewGroup container) {
-        final Context contextThemeWrapper = new ContextThemeWrapper(getActivity(), R.style.WeatherTheme);
-        LayoutInflater localInflater = inflater.cloneInContext(contextThemeWrapper);
-        return localInflater.inflate(R.layout.fragment_weather, container, false);
+
+        return inflater.inflate(R.layout.fragment_weather, container, false);
     }
 
     @Override
@@ -113,6 +111,7 @@ public class WeatherFragment extends BaseFragment implements IWeatherView, ILoca
     protected void initData() {
         mPresenter = new WeatherPresenterImp(mCityName, this);
         mPresenter.loadWeather();
+
     }
 
     @Override
@@ -126,9 +125,12 @@ public class WeatherFragment extends BaseFragment implements IWeatherView, ILoca
         });
     }
 
+    private boolean isEmpty = true;
+
     @Override
     public void showWather(WeatherBean bean) {
         if (bean != null) {
+            isEmpty = false;
             LogUtils.i("weatherBean", bean.toString());
             //未来5天天气
             mWetherInfoList.clear();
@@ -151,7 +153,7 @@ public class WeatherFragment extends BaseFragment implements IWeatherView, ILoca
             //天气
             mTemperature.setText(bean.getData().getRealtime().getWeather().getTemperature());
             mInfo.setText(bean.getData().getRealtime().getWeather().getInfo());
-            mHumidity.setText(bean.getData().getRealtime().getWeather().getHumidity());
+            mHumidity.setText("湿度:"+bean.getData().getRealtime().getWeather().getHumidity());
             mDirect.setText(bean.getData().getRealtime().getWind().getDirect());
             mPower.setText(bean.getData().getRealtime().getWind().getPower());
             //空气质量相关

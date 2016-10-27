@@ -10,40 +10,43 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="45dp">
+        android:layout_height="45dp"
+
+        >
 
         <EditText
             android:id="@+id/et_search"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="30dp"
             android:layout_centerVertical="true"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:layout_toLeftOf="@+id/bt_search"
-            android:background="@drawable/weather_search"
+            android:gravity="center_vertical"
             android:hint="搜索更多城市天气"
+            android:background="@drawable/weather_search"
             android:padding="3dp"
-            android:textCursorDrawable="@drawable/shap_cursor_edtext"
             android:textColor="#cccccc"
+            android:textCursorDrawable="@drawable/shap_cursor_edtext"
             />
 
         <Button
             android:id="@id/bt_search"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="30dp"
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
             android:layout_marginRight="10dp"
+            android:background="@drawable/weather_search"
             android:text="搜索"
-            android:background="#00000000"
             />
     </RelativeLayout>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/weather_hot_city"
         android:layout_marginTop="10dp"
+        android:text="@string/weather_hot_city"
         />
 
     <android.support.v7.widget.RecyclerView
@@ -54,8 +57,8 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/weather_search_record"
         android:layout_marginTop="20dp"
+        android:text="@string/weather_search_record"
         />
 
     <android.support.v7.widget.RecyclerView

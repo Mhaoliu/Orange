@@ -2,39 +2,41 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           xmlns:tools="http://schemas.android.com/tools"
           package="com.liuhao.orange">
-    <!--网络权限-->
+
+    <!-- 网络权限 -->
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
     <!-- 在SDCard中创建与删除文件权限 -->
     <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
     <!-- 往SDCard写入数据权限 -->
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
-    <!--百度地图-->
-    <!-- 这个权限用于进行网络定位-->
+    <!-- 百度地图 -->
+    <!-- 这个权限用于进行网络定位 -->
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
-    <!-- 这个权限用于访问GPS定位-->
+    <!-- 这个权限用于访问GPS定位 -->
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
-    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位-->
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
-    <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位-->
+    <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
     <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
-    <!-- 用于读取手机当前的状态-->
+    <!-- 用于读取手机当前的状态 -->
     <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
-    <!-- 写入扩展存储，向扩展卡写入数据，用于写入离线定位数据-->
+    <!-- 写入扩展存储，向扩展卡写入数据，用于写入离线定位数据 -->
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
-    <!-- SD卡读取权限，用户写入离线定位数据-->
+    <!-- SD卡读取权限，用户写入离线定位数据 -->
     <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
-    <!--百度地图-->
-    <uses-permission android:name="android.permission.VIBRATE" />
-    <uses-permission android:name="android.permission.CAMERA" />
-    <uses-permission android:name="android.permission.WAKE_LOCK" />
-    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
-    <!-- uses-permission android:name="com.android.launcher.permission.WRITE_SETTINGS" /-->
-    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <!-- 百度地图 -->
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/>
+    <!-- uses-permission android:name="com.android.launcher.permission.WRITE_SETTINGS" / -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
     <!-- <uses-permission android:name="android.permission.INTERNAL_SYSTEM_WINDOW"/> -->
-    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
-    <uses-permission android:name="android.permission.GET_TASKS" />
-    <!--优酷-->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+
+    <!-- 优酷 -->
     <application
         android:name=".OrgApplication"
         android:allowBackup="true"
@@ -42,8 +44,7 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
-        tools:replace="android:icon,android:theme"
-        >
+        tools:replace="android:icon,android:theme">
         <activity android:name=".activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
@@ -51,14 +52,12 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".activity.WebActivity">
-        </activity>
         <activity
             android:name=".activity.SearchWeatherActivity"
-            android:theme="@style/SearchWeatherTheme"
-            >
+            android:theme="@style/SearchWeatherTheme">
         </activity>
-        <!--百度地图-->
+        <activity android:name=".activity.NewsDetailsActivity"/>
+        <!-- 百度地图 -->
         <service
             android:name="com.baidu.location.f"
             android:enabled="true"
@@ -68,22 +67,20 @@
                 </action>
             </intent-filter>
         </service>
+
         <meta-data
             android:name="com.baidu.lbsapi.API_KEY"
             android:value="pgvhyYlaugextWtRAjUrVoh2ffL1O19q"/>
-        <!--百度地图 end-->
+        <!-- 百度地图 end -->
         <!-- 播放界面demo -->
         <activity
             android:name=".activity.PlayerActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:exported="true"
-            android:launchMode="singleTask"
-            >
+            android:launchMode="singleTask">
         </activity>
         <!-- 已经缓存的视频界面demo -->
-        <activity
-            android:name=".activity.CachedActivity"
-            />
+        <activity android:name=".activity.CachedActivity"/>
         <activity android:name=".activity.CachingActivity"/>
         <!-- 以下两个为下载时需要的添加的Service -->
         <service
@@ -112,6 +109,12 @@
         <meta-data
             android:name="client_secret"
             android:value="2d2ffaaa12642a4c6774e3af0401b2c8"/>
+
+        <activity
+            android:name=".activity.NewDetailsActivity"
+            android:label="@string/title_activity_new_details"
+            android:theme="@style/AppTheme">
+        </activity>
     </application>
 
 </manifest>
